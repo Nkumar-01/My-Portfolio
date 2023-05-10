@@ -1,0 +1,251 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>myPortfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/NitinLogo.png" class="logo" alt="">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Coding Profiles</a></li>
+          <li><a href="#portfolio">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <h1>Hi, I'm <span>Nitin</span><br>Kumar from India</h1>
+      </div>
+    </div>
+  </div>
+
+<!-- About Section -->
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/pi.png" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Hello! My name is <b>Nitin Kumar</b> and I enjoy creating new things that live on internet.
+            I born and raised in Rajasthan. Currently I'm pursuing B.Tech in IT field from VIT vellore.
+            This E-portfolio is a collections of outputs I produced during my journey. It is a compilation of my finished works created with sound
+            knowledge on certain topics, skills that I learned and a touch and passion towards technology.</p>
+          <br><br>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Projects</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Programming</span><br>
+                <p>C++ , C , Java , Python , SQL , PHP , Data Structure And Algorithm (DSA)</p>
+              </li>
+              <br>
+              <li><span>Web Development</span><br>
+                <p>HTML , CSS , JavaScript , BootStrap</p>
+              </li>
+              <!-- <li><span>App Development</span><br>Building Android/iOS apps</li> -->
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+
+              <br>  
+              <li>
+                <span>Resume Builder Website</span>
+                <p>- Using HTML, CSS , JavaScript , BootStrap</p>
+              </li>
+
+              <br>  
+              <li>
+                  <span>Learning Based Hand-Gesture Recognition System</span>
+                  <p>- Analyze the hand movement and tell us about the mood.</p>
+              </li>    
+              <br>  
+              <li>
+                <span>Management System Using SQL Plus</span>
+                  <p>- Maintaining the information of customers and employees. </p>
+                  <p>- Look at the conditions rooms and how many rooms are available 
+                    for customers.</p>
+                  <p>- Based on the above information update the room availability.</p>
+                  <p>- Updating the no. of customer residing inside hotel on regular basis.</p>
+                  <p>- Deleting the data of employee who left the job long time ago.</p>
+
+              </li> 
+              
+              <br>  
+              <li>
+                <span>Amazon Review Classification</span>
+                <p>- Analyze the product quality by customer feedback</p>
+              </li> 
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2020 - Current</span><br>Btech from VIT Vellore</li>
+              <li><span>2018-2020</span><br>High School from Star Public School</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Services Section -->
+
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">Coding Profiles</h1>
+    <div class="services-list">
+      <div>
+        <a href="https://www.codingninjas.com/codestudio/profile/Nk01"><img src="images/ninja-removebg-preview.png" alt=""></a>
+      </div>
+
+      <div>
+        <a href="https://www.hackerrank.com/nnkr8290"><img src="images/hackerrank-removebg-preview.png" style="width: 100%;" alt=""></a>
+      </div>
+
+      <div>
+        <a href="https://auth.geeksforgeeks.org/user/nnkr8290/practice"><img src="images/2_geeks-removebg-preview.png" style="width: 100%;" alt=""></a>
+      </div>
+    </div>
+    <a href="coding.html" target="_blank" class="btn">See more</a>
+  </div>
+</div>
+
+<!-- ------------------------- Portfolio --------------------- -->
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Certificates</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/Tech_Certify.png" alt="">
+        <div class="layer">
+          <h3>Click For Technical Certificates</h3>
+          <a href="tech.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      <div class="work">
+        <img src="images/Non-Tech.png" alt="">
+        <div class="layer">
+          <h3>Click For Non-Technical Certificates</h3>
+          <a href="non-tech.html" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ---------------------- Contact Me --------------------------- -->
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-regular fa-paper-plane"></i> nkka02@gmail.com</p>
+        <!-- <p><i class="fa-solid fa-phone"></i> 9876543210</p> -->
+
+        <div class="social-icons">
+          <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/nitin-kumar-085a36210/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <!-- <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a> -->
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <input type="number" name="Phone" placeholder="Your Number" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> Nitin.</p>
+  </div>
+</div>
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+
+
+<!-- 
+<form name="submit-to-google-sheet">
+  <input name="email" type="email" placeholder="Email" required>
+  <button type="submit">Send</button>
+</form> -->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyrstTsp_QbfWF5vG_XZnvFvQw7ealGQy97S6Zel0nP13edLJ5oz78e1vwJ1kt_fMhs/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully" 
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>

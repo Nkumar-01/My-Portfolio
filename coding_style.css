@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+
+.row {
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .img{
+    width:50%;
+    padding: 10px 10px 5px 100px;
+  }
+
+  .img:hover{
+    transform: scale(1.1);
+    /* color: aqua; */
+  }
+
+  .img1{
+    width:75%;
+    padding-left: 10px;
+  }
+  .img1:hover{
+    transform: scale(1.1);
+  }
